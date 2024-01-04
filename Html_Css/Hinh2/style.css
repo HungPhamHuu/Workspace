@@ -1,0 +1,121 @@
+body{
+    font-family: Manrope;
+    margin-left: 20px;
+    width: 100vw;
+}
+p{
+    font-size: 16px;
+    color: #333333;
+}
+.row input{
+    width: 250px;
+    height: 25px;
+    padding: 8px, 0px, 8px, 8px;
+    border-radius: 5px;
+    border: none;
+    gap: 10px;
+    background-color: #f8f8f8;
+}
+#maHang{
+    margin-bottom: 40px;
+}
+#tinhChietKhau{
+    font-size: 16px;
+    color: #005447;
+    border: 1px solid #005447;
+    border-radius: 5px;
+}
+#themKhachHang{
+    font-size: 16px;
+    color: #005447;
+    border: 1px solid #005447;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+h6{
+    font-size: 18px;
+    color: #262F3D;
+}
+.hangHoa ul{
+    background: #005447;
+    list-style-type: none;
+    overflow: hidden;
+    width: 50%;
+    border-top-right-radius: 50px;
+}
+.hangHoa li{
+    float: left;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 10px;
+}
+.main-content{
+    margin-right: 300px;
+}
+#list{
+    margin-left: 10px;
+}
+th{
+    background-color: #55544957;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 10px;
+}
+td{
+    font-family: Manrope;
+    font-size: 16px;
+    font-weight: 50px;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    padding: 6px 7px;
+}
+.options{
+    display: flex;
+}
+.options p{
+    font-family: Manrope;
+}
+.options input{
+    margin-right: 20px;
+    width: 150px;
+    height: 25px;
+    padding: 8px, 0px, 8px, 8px;
+    border-radius: 5px;
+    border: none;
+    gap: 10px;
+    background-color: #e4e2e2;
+}
+.row2{
+    /* position: relative;
+    left: 700px; */
+    margin-top: 15px;
+    margin-left: 750px;
+}
+.row2 button{
+    margin-right: 5px;
+}
+#inFile{
+    width: 90px;
+    height: 30px;
+    color: #FFFFFF;
+    background-color: #069981;
+    border-radius: 5px;
+}
+#huyBo{
+    width: 90px;
+    height: 30px;
+    color: #262F3D;
+    background-color: #EBEDF2;
+    border-radius: 5px;
+}
+#themMoi{
+    width: 90px;
+    height: 30px;
+    color: #FFFFFF;
+    background-color: #005447;
+    border-radius: 5px;
+}
