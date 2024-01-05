@@ -42,16 +42,21 @@ h6{
     overflow: hidden;
     width: 50%;
     border-top-right-radius: 50px;
+    margin: 0;
+    padding: 0;
 }
 .hangHoa li{
-    float: left;
+    float: left; 
     width: 120px;
     height: 40px;
     line-height: 40px;
     margin-left: 10px;
 }
-.main-content{
-    margin-right: 300px;
+.container{
+    margin-right: 200px;
+    align-items: stretch;
+    margin: 0;
+    padding: 0;
 }
 #list{
     margin-left: 10px;
