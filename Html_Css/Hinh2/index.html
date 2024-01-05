@@ -29,33 +29,33 @@
         <div class="col-md-4 gap-col-4">
           <div class="votes">
             <p>Số phiếu</p>
-            <input type="text" name="soPhieu" id="soPhieu" />
+            <input type="text" name="soPhieu" id="so_phieu" />
           </div>
           <div class="date-founded">
             <p>Ngày lập</p>
-            <input type="datetime" name="ngayLap" id="ngayLap" />
+            <input type="datetime" name="ngayLap" id="ngay_lap" />
           </div>
           <div class="deposit">
             <p>Tiền cọc</p>
-            <input type="text" name="tienCoc" id="tienCoc" />
+            <input type="text" name="tienCoc" id="tien_coc" />
           </div>
           <div class="status">
             <p>Trạng thái</p>
-            <input type="text" name="trangThai" id="trangThai" />
+            <input type="text" name="trangThai" id="trang_thai" />
           </div>
         </div>
         <div class="col-md-4 gap-col-4">
           <div class="customer-code">
             <p>Mã khách hàng</p>
-            <input type="text" name="maKhachHang" id="maKhachHang" />
+            <input type="text" name="maKhachHang" id="ma_kh" oninput="checkCustomer()" />
           </div>
           <div class="customer-name">
             <p>Tên khách hàng</p>
-            <input type="text" name="tenKhachHang" id="tenKhachHang" />
+            <input type="text" name="tenKhachHang" id="ten_kh" />
           </div>
           <div class="address">
             <p>Địa chỉ</p>
-            <input type="text" name="diaChi" id="diaChi" />
+            <input type="text" name="diaChi" id="dia_chi" />
           </div>
           <div class="imei">
             <p>Imei</p>
@@ -68,16 +68,16 @@
             <input
               type="text"
               name="maNhanVienVanChuyen"
-              id="maNhanVienVanChuyen"
+              id="ma_nv"
             />
           </div>
           <div class="staff-name">
             <p>Tên nhân viên</p>
-            <input type="text" name="tenNhanVien" id="tenNhanVien" />
+            <input type="text" name="tenNhanVien" id="ten_nv" />
           </div>
           <div class="plu">
             <p>Mã hàng</p>
-            <input type="text" name="maHang" id="maHang" />
+            <input type="text" name="maHang" id="ma_hang" />
           </div>
           <button id="tinhChietKhau">Tính chiết khấu</button>
           <button id="themKhachHang">Thêm khách hàng</button>
@@ -95,7 +95,7 @@
             <li style="color: #89a5a0">Bảo hành</li>
           </ul>
         </div>
-        <table id="list">
+        <table style="min-height: 30vh;" id="list">
           <thead>
             <tr>
               <th>Mã vật tư</th>
@@ -112,222 +112,9 @@
               <th>Thao tác</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody >
             <tr>
-              <td>12THACDOBD</td>
-              <td>Gói cước Thác đổ</td>
-              <td>23456av</td>
-              <td>Chiếc</td>
-              <td>12.000.000</td>
-              <td>
-                <input type="checkbox" />
-              </td>
-              <td>01</td>
-              <td>12.000.000</td>
-              <td>10%</td>
-              <td>12.000</td>
-              <td>12.000.000</td>
-              <td>
-                <button id="thaoTac"><i class="fa-solid fa-plus"></i></button>
-                <button id="thaoTac">
-                  <i class="fa-solid fa-pen-to-square"></i>
-                </button>
-                <button id="thaoTac">
-                  <i class="fa-solid fa-trash-can"></i>
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>12THACDOBD</td>
-              <td>Gói cước Thác đổ</td>
-              <td>23456av</td>
-              <td>Chiếc</td>
-              <td>12.000.000</td>
-              <td>
-                <input type="checkbox" />
-              </td>
-              <td>01</td>
-              <td>12.000.000</td>
-              <td>10%</td>
-              <td>12.000</td>
-              <td>12.000.000</td>
-              <td>
-                <button id="thaoTac"><i class="fa-solid fa-plus"></i></button>
-                <button id="thaoTac">
-                  <i class="fa-solid fa-pen-to-square"></i>
-                </button>
-                <button id="thaoTac">
-                  <i class="fa-solid fa-trash-can"></i>
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>12THACDOBD</td>
-              <td>Gói cước Thác đổ</td>
-              <td>23456av</td>
-              <td>Chiếc</td>
-              <td>12.000.000</td>
-              <td>
-                <input type="checkbox" />
-              </td>
-              <td>01</td>
-              <td>12.000.000</td>
-              <td>10%</td>
-              <td>12.000</td>
-              <td>12.000.000</td>
-              <td>
-                <button id="thaoTac"><i class="fa-solid fa-plus"></i></button>
-                <button id="thaoTac">
-                  <i class="fa-solid fa-pen-to-square"></i>
-                </button>
-                <button id="thaoTac">
-                  <i class="fa-solid fa-trash-can"></i>
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>12THACDOBD</td>
-              <td>Gói cước Thác đổ</td>
-              <td>23456av</td>
-              <td>Chiếc</td>
-              <td>12.000.000</td>
-              <td>
-                <input type="checkbox" />
-              </td>
-              <td>01</td>
-              <td>12.000.000</td>
-              <td>10%</td>
-              <td>12.000</td>
-              <td>12.000.000</td>
-              <td>
-                <button id="thaoTac"><i class="fa-solid fa-plus"></i></button>
-                <button id="thaoTac">
-                  <i class="fa-solid fa-pen-to-square"></i>
-                </button>
-                <button id="thaoTac">
-                  <i class="fa-solid fa-trash-can"></i>
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>12THACDOBD</td>
-              <td>Gói cước Thác đổ</td>
-              <td>23456av</td>
-              <td>Chiếc</td>
-              <td>12.000.000</td>
-              <td>
-                <input type="checkbox" />
-              </td>
-              <td>01</td>
-              <td>12.000.000</td>
-              <td>10%</td>
-              <td>12.000</td>
-              <td>12.000.000</td>
-              <td>
-                <button id="thaoTac"><i class="fa-solid fa-plus"></i></button>
-                <button id="thaoTac">
-                  <i class="fa-solid fa-pen-to-square"></i>
-                </button>
-                <button id="thaoTac">
-                  <i class="fa-solid fa-trash-can"></i>
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>12THACDOBD</td>
-              <td>Gói cước Thác đổ</td>
-              <td>23456av</td>
-              <td>Chiếc</td>
-              <td>12.000.000</td>
-              <td>
-                <input type="checkbox" />
-              </td>
-              <td>01</td>
-              <td>12.000.000</td>
-              <td>10%</td>
-              <td>12.000</td>
-              <td>12.000.000</td>
-              <td>
-                <button id="thaoTac"><i class="fa-solid fa-plus"></i></button>
-                <button id="thaoTac">
-                  <i class="fa-solid fa-pen-to-square"></i>
-                </button>
-                <button id="thaoTac">
-                  <i class="fa-solid fa-trash-can"></i>
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>12THACDOBD</td>
-              <td>Gói cước Thác đổ</td>
-              <td>23456av</td>
-              <td>Chiếc</td>
-              <td>12.000.000</td>
-              <td>
-                <input type="checkbox" />
-              </td>
-              <td>01</td>
-              <td>12.000.000</td>
-              <td>10%</td>
-              <td>12.000</td>
-              <td>12.000.000</td>
-              <td>
-                <button id="thaoTac"><i class="fa-solid fa-plus"></i></button>
-                <button id="thaoTac">
-                  <i class="fa-solid fa-pen-to-square"></i>
-                </button>
-                <button id="thaoTac">
-                  <i class="fa-solid fa-trash-can"></i>
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>12THACDOBD</td>
-              <td>Gói cước Thác đổ</td>
-              <td>23456av</td>
-              <td>Chiếc</td>
-              <td>12.000.000</td>
-              <td>
-                <input type="checkbox" />
-              </td>
-              <td>01</td>
-              <td>12.000.000</td>
-              <td>10%</td>
-              <td>12.000</td>
-              <td>12.000.000</td>
-              <td>
-                <button id="thaoTac"><i class="fa-solid fa-plus"></i></button>
-                <button id="thaoTac">
-                  <i class="fa-solid fa-pen-to-square"></i>
-                </button>
-                <button id="thaoTac">
-                  <i class="fa-solid fa-trash-can"></i>
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>12THACDOBD</td>
-              <td>Gói cước Thác đổ</td>
-              <td>23456av</td>
-              <td>Chiếc</td>
-              <td>12.000.000</td>
-              <td>
-                <input type="checkbox" />
-              </td>
-              <td>01</td>
-              <td>12.000.000</td>
-              <td>10%</td>
-              <td>12.000</td>
-              <td>12.000.000</td>
-              <td>
-                <button id="thaoTac"><i class="fa-solid fa-plus"></i></button>
-                <button id="thaoTac">
-                  <i class="fa-solid fa-pen-to-square"></i>
-                </button>
-                <button id="thaoTac">
-                  <i class="fa-solid fa-trash-can"></i>
-                </button>
-              </td>
+                
             </tr>
           </tbody>
         </table>
@@ -339,27 +126,27 @@
         <div class="options">
           <div>
             <p>Số lượng</p>
-            <input type="text" name="soLuong2" id="soLuong2" />
+            <input type="text" name="soLuong2" id="t_so_luong" />
           </div>
           <div>
             <p>Thành tiền</p>
-            <input type="text" name="thanhTien" id="thanhTien" />
+            <input type="text" name="thanhTien" id="t_tien" />
           </div>
           <div>
             <p>Chiết khấu</p>
-            <input type="text" name="chietKhau" id="chietKhau" />
+            <input type="text" name="chietKhau" id="t_ck" />
           </div>
           <div>
             <p>Thuế</p>
-            <input type="text" name="thue" id="thue" />
+            <input type="text" name="thue" id="t_thue" />
           </div>
           <div>
             <p>Điểm quy đổi</p>
-            <input type="text" name="diemQuyDoi" id="diemQuyDoi" />
+            <input type="text" name="diemQuyDoi" id="t_diem" />
           </div>
           <div>
             <p>Tổng phải thu</p>
-            <input type="text" name="tongPhaiThu" id="tongPhaiThu" />
+            <input type="text" name="tongPhaiThu" id="t_phai_thu" />
           </div>
         </div>
         <!-- <div class="row2">
@@ -376,5 +163,7 @@
         </div>
       </div>
     </div>
+
+    <script src="main.js"></script>
   </body>
 </html>
