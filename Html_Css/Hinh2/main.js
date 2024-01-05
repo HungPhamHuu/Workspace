@@ -48,8 +48,8 @@ imei.addEventListener("change", function checkImei() {
     const selectImei = produts.find(produts => produts.imei === imei_input);
 
     if (selectImei) {
-        const tien_thue = gia * thue_suat;
-        const tien = gia + tien_thue;
+        var tien_thue = gia * thue_suat;
+        var tien = gia + tien_thue;
 
         document.getElementById("gia").textContent = selectImei.gia;
         document.getElementById("ma_vt").textContent = selectImei.ma_vt;
