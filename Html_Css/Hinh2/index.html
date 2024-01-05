@@ -1,169 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <title>Hình 2</title>
     <meta charset="UTF-8" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-    />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css" />
-  </head>
+</head>
 
-  <body>
+<body>
     <div class="content">
-      <div class="information">
-        <h3 style="width: 100%"><b>Tạo đơn mới</b></h3>
-      </div>
-      <!-- <hr style="width: 100vh; margin-left: 25px;"> -->
-      <div class="row gap-4">
-        <div class="col-md-4 gap-col-4">
-          <div class="votes">
-            <p>Số phiếu</p>
-            <input type="text" name="soPhieu" id="so_phieu" />
-          </div>
-          <div class="date-founded">
-            <p>Ngày lập</p>
-            <input type="datetime" name="ngayLap" id="ngay_lap" />
-          </div>
-          <div class="deposit">
-            <p>Tiền cọc</p>
-            <input type="text" name="tienCoc" id="tien_coc" />
-          </div>
-          <div class="status">
-            <p>Trạng thái</p>
-            <input type="text" name="trangThai" id="trang_thai" />
-          </div>
+        <div class="information">
+            <h3 style="width: 100%"><b>Tạo đơn mới</b></h3>
         </div>
-        <div class="col-md-4 gap-col-4">
-          <div class="customer-code">
-            <p>Mã khách hàng</p>
-            <input type="text" name="maKhachHang" id="ma_kh" oninput="checkCustomer()" />
-          </div>
-          <div class="customer-name">
-            <p>Tên khách hàng</p>
-            <input type="text" name="tenKhachHang" id="ten_kh"/>
-          </div>
-          <div class="address">
-            <p>Địa chỉ</p>
-            <input type="text" name="diaChi" id="dia_chi"/>
-          </div>
-          <div class="imei">
-            <p>Imei</p>
-            <input type="text" name="imei" id="imei" />
-          </div>
+        <!-- <hr style="width: 100vh; margin-left: 25px;"> -->
+        <div class="row gap-4">
+            <div class="col-md-4 gap-col-4">
+                <div class="votes">
+                    <p>Số phiếu</p>
+                    <input type="text" name="soPhieu" id="so_phieu" />
+                </div>
+                <div class="date-founded">
+                    <p>Ngày lập</p>
+                    <input type="date" name="ngayLap" id="ngay_lap" />
+                </div>
+                <div class="deposit">
+                    <p>Tiền cọc</p>
+                    <input type="text" name="tienCoc" id="tien_coc" />
+                </div>
+                <div class="status">
+                    <p>Trạng thái</p>
+                    <input type="text" name="trangThai" id="trang_thai" />
+                </div>
+            </div>
+            <div class="col-md-4 gap-col-4">
+                <div class="customer-code">
+                    <p>Mã khách hàng</p>
+                    <input type="text" name="maKhachHang" id="ma_kh" />
+                </div>
+                <div class="customer-name">
+                    <p>Tên khách hàng</p>
+                    <input type="text" name="tenKhachHang" id="ten_kh" />
+                </div>
+                <div class="address">
+                    <p>Địa chỉ</p>
+                    <input type="text" name="diaChi" id="dia_chi" />
+                </div>
+                <div class="imei">
+                    <p>Imei</p>
+                    <input type="text" name="imei" id="imei" />
+                </div>
+            </div>
+            <div class="col-md-4 gap-col-4">
+                <div class="shipping-staff-code">
+                    <p>Mã nhân viên vận chuyển</p>
+                    <input type="text" name="maNhanVienVanChuyen" id="ma_nv" />
+                </div>
+                <div class="staff-name">
+                    <p>Tên nhân viên</p>
+                    <input type="text" name="tenNhanVien" id="ten_nv" />
+                </div>
+                <div class="plu">
+                    <p>Mã hàng</p>
+                    <input type="text" name="maHang" id="ma_hang" />
+                </div>
+                <button id="tinhChietKhau">Tính chiết khấu</button>
+                <button id="themKhachHang">Thêm khách hàng</button>
+            </div>
         </div>
-        <div class="col-md-4 gap-col-4">
-          <div class="shipping-staff-code">
-            <p>Mã nhân viên vận chuyển</p>
-            <input
-              type="text"
-              name="maNhanVienVanChuyen"
-              id="ma_nv"
-            />
-          </div>
-          <div class="staff-name">
-            <p>Tên nhân viên</p>
-            <input type="text" name="tenNhanVien" id="ten_nv" />
-          </div>
-          <div class="plu">
-            <p>Mã hàng</p>
-            <input type="text" name="maHang" id="ma_hang" />
-          </div>
-          <button id="tinhChietKhau">Tính chiết khấu</button>
-          <button id="themKhachHang">Thêm khách hàng</button>
+        <div class="table-container">
+            <div>
+                <h6><strong>Thông tin hàng hóa</strong></h6>
+            </div>
+            <div class="hangHoa">
+                <ul>
+                    <li style="color: #ffffff">Hàng hóa</li>
+                    <li style="color: #89a5a0">Dịch vụ</li>
+                    <li style="color: #89a5a0">Chiết khấu</li>
+                    <li style="color: #89a5a0">Bảo hành</li>
+                </ul>
+            </div>
+            <table style="min-height: 30vh;" id="list">
+                <thead>
+                    <tr>
+                        <th>Mã vật tư</th>
+                        <th>Tên vật tư</th>
+                        <th>Imei</th>
+                        <th>ĐVT</th>
+                        <th>Đơn giá</th>
+                        <th>Hàng KM</th>
+                        <th>Số lượng</th>
+                        <th>Thành tiền</th>
+                        <th>Thuế suất(%)</th>
+                        <th>Tiền thuế</th>
+                        <th>Tổng tiền</th>
+                        <th>Thao tác</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="ma_vt"></td>
+                        <td id="ten_vt"></td>
+                        <td id="imei_td"></td>
+                        <td id="dvt"></td>
+                        <td id="gia"></td>
+                        <td></td>
+                        <td id="so_luong"></td>
+                        <td></td>
+                        <td id="thue_suat"></td>
+                        <td id="tien_thue"></td>
+                        <td id="tien"></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-      </div>
-      <div class="table-container">
-        <div>
-          <h6><strong>Thông tin hàng hóa</strong></h6>
-        </div>
-        <div class="hangHoa">
-          <ul>
-            <li style="color: #ffffff">Hàng hóa</li>
-            <li style="color: #89a5a0">Dịch vụ</li>
-            <li style="color: #89a5a0">Chiết khấu</li>
-            <li style="color: #89a5a0">Bảo hành</li>
-          </ul>
-        </div>
-        <table style="min-height: 30vh;" id="list">
-          <thead>
-            <tr>
-              <th>Mã vật tư</th>
-              <th>Tên vật tư</th>
-              <th>Imei</th>
-              <th>ĐVT</th>
-              <th>Đơn giá</th>
-              <th>Hàng KM</th>
-              <th>Số lượng</th>
-              <th>Thành tiền</th>
-              <th>Thuế suất(%)</th>
-              <th>Tiền thuế</th>
-              <th>Tổng tiền</th>
-              <th>Thao tác</th>
-            </tr>
-          </thead>
-          <tbody >
-            <tr>
-                
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <!-- <hr> -->
+        <!-- <hr> -->
 
-      <div class="sum-order">
-        <h6><strong>Tổng cộng đơn hàng</strong></h6>
-        <div class="options">
-          <div>
-            <p>Số lượng</p>
-            <input type="text" name="soLuong2" id="t_so_luong" />
-          </div>
-          <div>
-            <p>Thành tiền</p>
-            <input type="text" name="thanhTien" id="t_tien" />
-          </div>
-          <div>
-            <p>Chiết khấu</p>
-            <input type="text" name="chietKhau" id="t_ck" />
-          </div>
-          <div>
-            <p>Thuế</p>
-            <input type="text" name="thue" id="t_thue" />
-          </div>
-          <div>
-            <p>Điểm quy đổi</p>
-            <input type="text" name="diemQuyDoi" id="t_diem" />
-          </div>
-          <div>
-            <p>Tổng phải thu</p>
-            <input type="text" name="tongPhaiThu" id="t_phai_thu" />
-          </div>
-        </div>
-        <!-- <div class="row2">
+        <div class="sum-order">
+            <h6><strong>Tổng cộng đơn hàng</strong></h6>
+            <div class="options">
+                <div>
+                    <p>Số lượng</p>
+                    <input type="text" name="soLuong2" id="t_so_luong" />
+                </div>
+                <div>
+                    <p>Thành tiền</p>
+                    <input type="text" name="thanhTien" id="t_tien" />
+                </div>
+                <div>
+                    <p>Chiết khấu</p>
+                    <input type="text" name="chietKhau" id="t_ck" />
+                </div>
+                <div>
+                    <p>Thuế</p>
+                    <input type="text" name="thue" id="t_thue" />
+                </div>
+                <div>
+                    <p>Điểm quy đổi</p>
+                    <input type="text" name="diemQuyDoi" id="t_diem" />
+                </div>
+                <div>
+                    <p>Tổng phải thu</p>
+                    <input type="text" name="tongPhaiThu" id="t_phai_thu" />
+                </div>
+            </div>
+            <!-- <div class="row2">
                     <div class="col-md-4">
                         <button id="inFile" >In File</button>
                         <button id="huyBo">Hủy bỏ</button>
                         <button id="themMoi">Thêm mới</button>
                     </div>
                 </div> -->
-        <div class="row2">
-          <button id="inFile">In File</button>
-          <button id="huyBo">Hủy bỏ</button>
-          <button id="themMoi">Thêm mới</button>
+            <div class="row2">
+                <button id="inFile">In File</button>
+                <button id="huyBo">Hủy bỏ</button>
+                <button id="themMoi">Thêm mới</button>
+            </div>
         </div>
-      </div>
     </div>
 
     <script src="main.js"></script>
-  </body>
+</body>
+
 </html>
